@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		441FE73F2C86659400E65063 /* ViewHosting in Frameworks */ = {isa = PBXBuildFile; productRef = 441FE73E2C86659400E65063 /* ViewHosting */; };
+		441FE7412C86659400E65063 /* ViewTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 441FE7402C86659400E65063 /* ViewTesting */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		443338242C86525000360C09 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -40,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				441FE73F2C86659400E65063 /* ViewHosting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				441FE7412C86659400E65063 /* ViewTesting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +99,7 @@
 			);
 			name = GStar;
 			packageProductDependencies = (
+				441FE73E2C86659400E65063 /* ViewHosting */,
 			);
 			productName = GStar;
 			productReference = 4433380B2C86509F00360C09 /* GStar.app */;
@@ -115,6 +123,7 @@
 			);
 			name = GStarTests;
 			packageProductDependencies = (
+				441FE7402C86659400E65063 /* ViewTesting */,
 			);
 			productName = GStarTests;
 			productReference = 443338202C86525000360C09 /* GStarTests.xctest */;
@@ -148,6 +157,9 @@
 			);
 			mainGroup = 443338022C86509E00360C09;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				441FE73D2C86659400E65063 /* XCRemoteSwiftPackageReference "swiftui-view-testing" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 4433380C2C86509F00360C09 /* Products */;
 			projectDirPath = "";
@@ -442,6 +454,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		441FE73D2C86659400E65063 /* XCRemoteSwiftPackageReference "swiftui-view-testing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sisoje/swiftui-view-testing";
+			requirement = {
+				kind = exactVersion;
+				version = 0.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		441FE73E2C86659400E65063 /* ViewHosting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 441FE73D2C86659400E65063 /* XCRemoteSwiftPackageReference "swiftui-view-testing" */;
+			productName = ViewHosting;
+		};
+		441FE7402C86659400E65063 /* ViewTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 441FE73D2C86659400E65063 /* XCRemoteSwiftPackageReference "swiftui-view-testing" */;
+			productName = ViewTesting;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 443338032C86509E00360C09 /* Project object */;
 }

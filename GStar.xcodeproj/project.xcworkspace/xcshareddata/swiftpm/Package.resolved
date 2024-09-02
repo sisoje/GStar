@@ -1,10 +1,10 @@
 {
-  "originHash" : "9f8d063dc23db0175394a59643473b93f63045ae0062199156b3a888649c02f3",
+  "originHash" : "56991a4521ba2652d46c5d10f14d08cfe44d7864434757322d87e6d1c3521701",
   "pins" : [
     {
-      "identity" : "swiftui-native",
+      "identity" : "swiftui-view-testing",
       "kind" : "remoteSourceControl",
-      "location" : "https://sisoje@github.com/sisoje/swiftui-native.git",
+      "location" : "https://github.com/sisoje/swiftui-view-testing",
       "state" : {
         "revision" : "4b581deddc7a69301bf951a7e6ae56f0f38caea1",
         "version" : "0.1.0"
