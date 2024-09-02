@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "1BFED604-AED3-4F87-8133-C06152651585",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:GStar.xcodeproj",
+        "identifier" : "4433381F2C86525000360C09",
+        "name" : "GStarTests"
+      }
+    }
+  ],
+  "version" : 1
+}

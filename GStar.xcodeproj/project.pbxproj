@@ -6,14 +6,31 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		443338242C86525000360C09 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 443338032C86509E00360C09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4433380A2C86509E00360C09;
+			remoteInfo = GStar;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		441D52962C865346001CBC33 /* GStar.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = GStar.xctestplan; sourceTree = "<group>"; };
 		4433380B2C86509F00360C09 /* GStar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GStar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		443338202C86525000360C09 /* GStarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GStarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		4433380D2C86509F00360C09 /* GStar */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = GStar;
+			sourceTree = "<group>";
+		};
+		443338212C86525000360C09 /* GStarTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = GStarTests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -26,13 +43,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4433381D2C86525000360C09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		443338022C86509E00360C09 = {
 			isa = PBXGroup;
 			children = (
+				441D52962C865346001CBC33 /* GStar.xctestplan */,
 				4433380D2C86509F00360C09 /* GStar */,
+				443338212C86525000360C09 /* GStarTests */,
 				4433380C2C86509F00360C09 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				4433380B2C86509F00360C09 /* GStar.app */,
+				443338202C86525000360C09 /* GStarTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +97,29 @@
 			productReference = 4433380B2C86509F00360C09 /* GStar.app */;
 			productType = "com.apple.product-type.application";
 		};
+		4433381F2C86525000360C09 /* GStarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 443338262C86525000360C09 /* Build configuration list for PBXNativeTarget "GStarTests" */;
+			buildPhases = (
+				4433381C2C86525000360C09 /* Sources */,
+				4433381D2C86525000360C09 /* Frameworks */,
+				4433381E2C86525000360C09 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				443338252C86525000360C09 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				443338212C86525000360C09 /* GStarTests */,
+			);
+			name = GStarTests;
+			packageProductDependencies = (
+			);
+			productName = GStarTests;
+			productReference = 443338202C86525000360C09 /* GStarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -82,6 +132,10 @@
 				TargetAttributes = {
 					4433380A2C86509E00360C09 = {
 						CreatedOnToolsVersion = 16.1;
+					};
+					4433381F2C86525000360C09 = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = 4433380A2C86509E00360C09;
 					};
 				};
 			};
@@ -100,12 +154,20 @@
 			projectRoot = "";
 			targets = (
 				4433380A2C86509E00360C09 /* GStar */,
+				4433381F2C86525000360C09 /* GStarTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		443338092C86509E00360C09 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4433381E2C86525000360C09 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +184,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4433381C2C86525000360C09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		443338252C86525000360C09 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4433380A2C86509E00360C09 /* GStar */;
+			targetProxy = 443338242C86525000360C09 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		443338172C8650A000360C09 /* Debug */ = {
@@ -300,6 +377,40 @@
 			};
 			name = Release;
 		};
+		443338272C86525000360C09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sisoje.GStarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GStar.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GStar";
+			};
+			name = Debug;
+		};
+		443338282C86525000360C09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sisoje.GStarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GStar.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GStar";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -317,6 +428,15 @@
 			buildConfigurations = (
 				4433381A2C8650A000360C09 /* Debug */,
 				4433381B2C8650A000360C09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		443338262C86525000360C09 /* Build configuration list for PBXNativeTarget "GStarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				443338272C86525000360C09 /* Debug */,
+				443338282C86525000360C09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
